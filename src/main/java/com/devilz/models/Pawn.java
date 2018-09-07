@@ -1,16 +1,17 @@
 package com.devilz.models;
 
+import com.devilz.commons.Constants;
 import com.devilz.enums.Color;
 
 public class Pawn extends Piece {
-    Pawn(Color color, Integer position){
-        this.color = color;
-        this.position = position;
+    public Pawn(Color color, Integer position){
+        setColor(color);
+        setPosition(position);
 
-        if(this.color == Color.WHITE){
-            name = "WP";
+        if(getColor() == Color.WHITE){
+            setName(Constants.WHITE_PAWN);
         }else{
-            name = "BP";
+            setName(Constants.BLACK_PAWN);
         }
     }
 }

@@ -1,18 +1,14 @@
 package com.devilz.validator;
 
+import com.devilz.board.Board;
+
 public class Validator{
 
-    private int val = 0;
+    private static final boolean _debug = false;
+
+    private Board gameBoard;
 
     public Validator(){
-        val = 3;
-    }
-
-    public void PrintVal(){
-        System.out.println("Val : " + val);
-    }
-
-    public void SetVal(int val){
-        this.val = val;
+        gameBoard = new Board();
     }
 }
